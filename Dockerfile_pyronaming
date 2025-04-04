@@ -1,0 +1,6 @@
+FROM python:3.9-slim
+
+RUN pip install Pyro4
+
+CMD ["python3", "-m", "Pyro4.naming", "-n", "pyronaming", "-p", "9090"]
+

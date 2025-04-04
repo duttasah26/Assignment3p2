@@ -1,0 +1,9 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY mysocketserver.py .
+
+RUN pip install Pyro4
+
+CMD ["python3", "mysocketserver.py"]
